@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa rural de pruebas - actividad con [MI NOMBRE]</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabecera con título y menú de navegación -->
+    <header class="site-header" id="inicio">
+      <div class="container">
+        <h1>Casa rural de pruebas - actividad con [MI NOMBRE]</h1>
+        <nav aria-label="Navegación principal">
+          <ul class="menu">
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#resenas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Foto principal grande -->
+      <section class="hero" aria-label="Foto principal de casa rural en Cádiz">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80"
+          alt="Paisaje rural cerca de Cádiz al atardecer"
+        />
+      </section>
+
+      <!-- Bloque de características de la casa rural -->
+      <section class="container section" id="caracteristicas">
+        <h2>Características</h2>
+        <ul class="features-grid">
+          <li>4 habitaciones</li>
+          <li>Piscina</li>
+          <li>WiFi</li>
+          <li>Barbacoa</li>
+          <li>Cerca de la playa</li>
+          <li>Entorno natural</li>
+        </ul>
+      </section>
+
+      <!-- Mapa interactivo de Google Maps (Cádiz) -->
+      <section class="container section" id="mapa">
+        <h2>Ubicación en Cádiz</h2>
+        <div class="map-wrapper">
+          <iframe
+            title="Mapa de Cádiz"
+            src="https://www.google.com/maps?q=C%C3%A1diz&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Galería responsive con 6 imágenes -->
+      <section class="container section" id="galeria">
+        <h2>Galería de fotos</h2>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=900&q=80" alt="Casa rural con piscina" />
+          <img src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?auto=format&fit=crop&w=900&q=80" alt="Terraza de casa rural" />
+          <img src="https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=900&q=80" alt="Habitación acogedora" />
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Salón de casa rural" />
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=80" alt="Comedor rústico" />
+          <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=900&q=80" alt="Jardín con barbacoa" />
+        </div>
+      </section>
+
+      <!-- Reseñas ficticias de clientes -->
+      <section class="container section" id="resenas">
+        <h2>Reseñas</h2>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <h3>María G.</h3>
+            <p>“Una experiencia fantástica. La piscina y el entorno natural son increíbles.”</p>
+          </article>
+          <article class="review-card">
+            <h3>Javier R.</h3>
+            <p>“Perfecta para desconectar. Muy cerca de la playa y con todas las comodidades.”</p>
+          </article>
+          <article class="review-card">
+            <h3>Lucía P.</h3>
+            <p>“Casa muy cuidada y con buena conexión WiFi. Repetiremos sin duda.”</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Botones de contacto y WhatsApp -->
+      <section class="container section" id="contacto">
+        <h2>Contacto</h2>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:info@casaruralcadiz.com">Contactar</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">Chatear por WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página con enlaces legales -->
+    <footer class="site-footer">
+      <div class="container footer-links">
+        <a href="politica-privacidad.md">Política de privacidad</a>
+        <a href="aviso-legal.md">Aviso legal</a>
+        <a href="cookies.md">Cookies</a>
+      </div>
+    </footer>
+  </body>
+</html>
