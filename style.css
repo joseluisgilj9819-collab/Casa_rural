@@ -1,0 +1,194 @@
+/* Estilos generales de la web */
+:root {
+  --bg: #f6f8f7;
+  --text: #1f2a2e;
+  --primary: #2f6f59;
+  --accent: #25d366;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  /* Imagen de cabaña rural de fondo en toda la web */
+  background-image: linear-gradient(rgba(246, 248, 247, 0.72), rgba(246, 248, 247, 0.72)),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* Cabecera y navegación */
+.site-header {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #d9e1de;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(4px);
+}
+
+.site-header h1 {
+  margin: 0;
+  padding: 1rem 0 0.5rem;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0 0 1rem;
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Imagen principal */
+.hero img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+/* Superficie para contenido sobre el fondo */
+.surface {
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+/* Características */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+}
+
+.features-grid li {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--primary);
+}
+
+/* Mapa */
+.map-wrapper iframe {
+  width: 100%;
+  min-height: 360px;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* Galería */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Reseñas */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.review-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Botones */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-whatsapp {
+  background: var(--accent);
+  color: #063;
+}
+
+.btn-secondary {
+  background: #e9eef0;
+  color: #1f2a2e;
+}
+
+/* Pie de página */
+.site-footer {
+  background: #0f1b1f;
+  padding: 1.2rem 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #d8f3e2;
+}
+
+/* Ajustes responsive para móviles */
+@media (max-width: 640px) {
+  .site-header {
+    position: static;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+
+  .menu {
+    gap: 0.6rem;
+  }
+}
