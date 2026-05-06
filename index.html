@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | Casa rural de pruebas - actividad con [MI NOMBRE]</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabecera común con enlaces a páginas HTML independientes -->
+    <header class="site-header">
+      <div class="container">
+        <h1>Casa rural de pruebas - actividad con [MI NOMBRE]</h1>
+        <nav aria-label="Navegación principal">
+          <ul class="menu">
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="imagen-principal.html">Imagen principal</a></li>
+            <li><a href="caracteristicas.html">Características</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="resenas.html">Reseñas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Pantalla principal: solo presenta accesos a cada apartado separado -->
+    <main class="container section surface">
+      <h2>Página principal</h2>
+      <p>
+        Bienvenido/a a la casa rural ficticia en Cádiz. Cada apartado está ahora en
+        una página web distinta para que la navegación sea clara y sencilla.
+      </p>
+
+      <section aria-labelledby="apartados-title">
+        <h2 id="apartados-title">Apartados de la web</h2>
+        <div class="page-grid">
+          <a class="page-card" href="imagen-principal.html">Imagen principal</a>
+          <a class="page-card" href="caracteristicas.html">Características</a>
+          <a class="page-card" href="mapa.html">Mapa interactivo</a>
+          <a class="page-card" href="galeria.html">Galería de fotos</a>
+          <a class="page-card" href="resenas.html">Reseñas</a>
+          <a class="page-card" href="contacto.html">Contacto</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página común con enlaces legales -->
+    <footer class="site-footer">
+      <div class="container footer-links">
+        <a href="politica-privacidad.md">Política de privacidad</a>
+        <a href="aviso-legal.md">Aviso legal</a>
+        <a href="cookies.md">Cookies</a>
+      </div>
+    </footer>
+  </body>
+</html>
