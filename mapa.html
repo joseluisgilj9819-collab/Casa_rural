@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa | Casa rural</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabecera común con enlaces a páginas HTML independientes -->
+    <header class="site-header">
+      <div class="container">
+        <h1>Casa rural de pruebas - actividad con [MI NOMBRE]</h1>
+        <nav aria-label="Navegación principal">
+          <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="imagen-principal.html">Imagen principal</a></li>
+            <li><a href="caracteristicas.html">Características</a></li>
+            <li><a href="mapa.html" aria-current="page">Mapa</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="resenas.html">Reseñas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Página independiente del mapa interactivo -->
+    <main class="container section surface">
+      <h2>Ubicación en Cádiz</h2>
+      <div class="map-wrapper">
+        <iframe
+          title="Mapa de Cádiz"
+          src="https://www.google.com/maps?q=C%C3%A1diz&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="actions page-actions">
+        <a class="btn btn-secondary" href="index.html">Volver a la pantalla principal</a>
+        <a class="btn btn-primary" href="contacto.html">Ir a contacto</a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-links">
+        <a href="politica-privacidad.md">Política de privacidad</a>
+        <a href="aviso-legal.md">Aviso legal</a>
+        <a href="cookies.md">Cookies</a>
+      </div>
+    </footer>
+  </body>
+</html>
